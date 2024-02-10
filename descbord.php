@@ -1,14 +1,22 @@
-<?php 
-/* BD store */
-$ues = "tamim@gmail.com";
-$ups = "1234a";
+<?php
 
-//input email and password
-$ue = $_REQUEST['email'];
-$up = $_REQUEST['pass'];
+$un = $_POST['name'];
+$up = $_POST['pass'];
 
-//check in user 
-if($ues == $ue && $ups == $up){
-    echo "<font color='green'>Login success.</font>";
-}else echo "<font color='red'>Login failed!</font>";
+if($un == "google" && $up =="hello" ){
+    header("location:show.php?full=$un <br> $up");//ekhan theke ami post method diye data pass korte cai show.php te.but ekhon ekhane get method use hoy jar phole url e data show hoy.
+    
+}else echo "Not matching";
+
+
+
+
+// if($un == "google" ){
+//     header("location:https://www.google.com");
+
+// } elseif($un == "facebook"){
+//      header("location:https://www.facebook.com");
+// }else echo "This page not fount.";
+
+
 ?>

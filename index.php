@@ -7,8 +7,11 @@
 </head>
 <body>
     <form action="descbord.php" method="post">
-        <input type="email" name="email" placeholder="Enter your email">
+
+        <input type="text" name="name" placeholder="Enter your name">
+
         <input type="password" name="pass" placeholder="Enter your password">
+
         <input type="submit">
     </form>
 </body>
